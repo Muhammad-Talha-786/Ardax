@@ -33,5 +33,5 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: Deploying using surge
-        run: surge ./ ACMP.surge.sh --token ${(secrets.ACMP)}
+        run: surge ./ ACMP.surge.sh --token ${{secrets.ACMP}}
       
